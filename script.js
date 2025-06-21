@@ -49,6 +49,8 @@ form.addEventListener("submit", (e) => {
   renderTable();
 });
 
+/* Adding edit Feature */
+
 function editStudent(index) {
   const student = students[index];
   form.studentName.value = student.name;
@@ -60,6 +62,8 @@ function editStudent(index) {
   localStorage.setItem("students", JSON.stringify(students));
   renderTable();
 }
+
+/* Adding delete feature */
 
 function deleteStudent(index) {
   if (confirm("Are you sure you want to delete this record?")) {
