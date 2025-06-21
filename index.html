@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <!-- HEADER -->
+    <header>
+      <h1>📘 Student Registration System</h1>
+      <p>Register student details and manage them with ease.</p>
+    </header>
+   
+
+    <!-- FORM-SECTIONS -->
+    <section class="form-section">
+      <form id="registrationForm">
+        <input type="text" id="studentName" placeholder="Student Name" required />
+        <input type="text" id="studentId" placeholder="Student ID" required />
+        <input type="email" id="email" placeholder="Email ID" required />
+        <input type="text" id="contact" placeholder="Contact No." required />
+        <button type="submit">Add Student</button>
+      </form>
+    </section>
+
+
+    <!-- RECORD-SECTIONS -->
+    <section class="records-section">
+      <h2>Registered Students</h2>
+      <div class="table-wrapper">
+        <table id="studentsTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Student records will appear here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
